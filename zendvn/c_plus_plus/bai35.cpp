@@ -1,7 +1,6 @@
 // thong ke uoc so chan
 
 #include <iostream>
-
 using namespace std;
 
 int main(){
@@ -9,7 +8,7 @@ int main(){
     string res = "";
     int i = 2;
     while(i <= n){
-        if(n % i == 0)
+        if(n % i == 0) // tim uoc chan cua n
             res += to_string(i) + " ";
         i += 2;
     }

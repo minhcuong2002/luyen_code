@@ -1,10 +1,10 @@
 // thap hinh tam giac dang duong cheo so
 
 #include <iostream>
-
 using namespace std;
 
-void Solution(int n){
+// ket qua
+void solution(int n){
     string shape = "", space = " ";
     for(int i = 1; i <= n; i++){
         string record = "";
@@ -22,9 +22,8 @@ void Solution(int n){
 }
 
 int main(){
-    int n = 7;
-    cout << "Solution:\n";
-    Solution(n);
-    
+    int n = 5; // chieu cao tam giac
+    cout << "solution:\n";
+    solution(n);
     return 0;
 }

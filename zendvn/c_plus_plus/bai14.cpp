@@ -1,9 +1,9 @@
 // doanh so ban hang
 
 #include <iostream>
-
 using namespace std;
- 
+
+// hoa hong
 float sales(int totalSale){
     if(totalSale <= 100) return totalSale * 0.05;
     else if(totalSale > 100 && totalSale <= 300) return totalSale * 0.1;

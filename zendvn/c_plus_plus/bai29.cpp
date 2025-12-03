@@ -1,9 +1,9 @@
 // uoc so
 
 #include <iostream>
-
 using namespace std;
 
+// uoc so (de quy)
 void listDivisors(int n, int k, string &res){
     if(k > n) return;
     if(n % k == 0){

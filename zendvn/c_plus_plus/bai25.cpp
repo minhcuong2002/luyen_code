@@ -1,11 +1,11 @@
 // f(n) = 1^2 + 2^2 + ... + n^2
 
 #include <iostream>
-
 using namespace std;
 
+// tinh tong
 int sumSquares(int n){
-    return n * (n + 1) * (2*n + 1) / 6;
+    return n * (n + 1) * (2*n + 1) / 6; // cong thuc tinh tong so luy thua 2 tu 1 den n
 }
 
 

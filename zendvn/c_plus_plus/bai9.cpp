@@ -1,9 +1,9 @@
 // nguyen am
 
 #include <iostream>
-
 using namespace std;
 
+// kiem tra tu nguyen am
 bool isVowel(char c){
     char token = c;
     switch (token){

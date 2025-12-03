@@ -1,13 +1,14 @@
 // so nguyen am duong chan le
 
 #include <iostream>
-
 using namespace std;
 
+// kiem tra so chan
 bool isEven(int n){
     return n % 2 == 0;
 }
 
+// kiem tra so le
 bool isPositive(int n){
     return n >= 0;
 }

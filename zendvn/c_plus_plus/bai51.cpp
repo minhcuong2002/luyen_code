@@ -1,10 +1,10 @@
 // thap hinh so tang dan
 
 #include <iostream>
-
 using namespace std;
 
-void Solution(int n){
+// ket qua
+void solution(int n){
     for(int i = 1; i <= n; i++){
         int x = i;
         for(int k = 0; k < 3; k++){
@@ -17,10 +17,8 @@ void Solution(int n){
 }
 
 int main(){
-    int n = 5;
-
-    cout << "Solution:\n";
-    Solution(n);
-    
+    int n = 5; // chieu cao tam giac
+    cout << "solution:\n";
+    solution(n);
     return 0;
 }

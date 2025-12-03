@@ -1,9 +1,9 @@
 // phim the gioi lap trinh
 
 #include <iostream>
-
 using namespace std;
 
+// kiem tra tuoi
 bool ok(int age){
     return age >= 15;
 }

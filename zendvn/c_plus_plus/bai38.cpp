@@ -2,9 +2,9 @@
 
 #include <iostream>
 #include <string>
-
 using namespace std;
 
+// cach 2
 void solution1(int n){
     for(int i = 1; i <= n; i++){
         cout << i;
@@ -15,6 +15,7 @@ void solution1(int n){
     }
 }
 
+// cach 2
 void solution2(int n){
     for(int i = 1; i <= n; i++){
         cout << i;
@@ -31,14 +32,9 @@ void solution2(int n){
 }
 
 int main(){
-    int n = 5;
-    cout << "Solution 1:\n"; 
-    solution1(n);
-    
+    int n = 5; // chieu cao tam giac
+    cout << "solution 1:\n"; solution1(n);
     cout << endl;
-
-    cout << "Solution 2:\n"; 
-    solution2(n);
-    
+    cout << "solution 2:\n"; solution2(n);
     return 0;
 }

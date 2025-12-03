@@ -2,13 +2,12 @@
 
 #include <iostream>
 #include <string>
-
 using namespace std;
 
-void Solution1(int n){
+// cach 1
+void solution1(int n){
     for(int i = 1; i <= n; i++){
         char digit = '0' + i;
-
         cout 
             << string(n - i, '#') 
             << string(2 * i - 1, digit)
@@ -17,37 +16,27 @@ void Solution1(int n){
     }
 }
 
-void Solution2(int n){
+// cach 2
+void solution2(int n){
     for(int i = 1; i <= n; i++){
         char digit = '0' + i;
-
         for(int j = 0; j < n - i; j++){
             cout << "#";
         }
-
         for(int j = 0; j < 2 * i - 1; j++){
             cout << digit;
         }
-
         for(int j = 0; j < n - i; j++){
             cout << "#";
         }
-
         cout << "\n";
     }
 }
 
-
 int main(){
-    int n = 5;
-
-    cout << "Solutions 1:\n";
-    Solution1(n);
-    
+    int n = 5; // chieu cao tam giac
+    cout << "solution 1:\n"; solution1(n);
     cout << endl;
-    
-    cout << "Solution 2:\n";
-    Solution2(n);
-    
+    cout << "solution 2:\n"; solution2(n);
     return 0;
 }

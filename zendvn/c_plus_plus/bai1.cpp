@@ -1,13 +1,14 @@
 // kich thuoc hinh vuong
 
 #include <iostream>
-
 using namespace std;
 
+// chu vi
 int perimeter(int squareLength){
     return squareLength * 4;
 }
 
+// dien tich
 int area(int squareLength){
     return squareLength * squareLength;
 }

@@ -1,9 +1,9 @@
 // bang cuu chuong
 
 #include <iostream>
-
 using namespace std;
 
+// bang cuu chuong
 void multiplicationTable(int n){
     for(int i = 1; i <= 10; i++){
         cout << n << " x " << i << " = " << n * i << endl;

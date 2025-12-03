@@ -1,10 +1,10 @@
-//so lon nhat tong 3 so
+// so lon nhat trong 3 so
 
 #include <iostream>
-
 using namespace std;
 
-int sumofthree(int one, int two, int three){
+// so lon nhat trong 3 so
+int max(int one, int two, int three){
     cout << "Max " << one << ", " << two << ", " << three << ": ";
     if(one >= two && one >= three){
         return one;
@@ -18,9 +18,7 @@ int sumofthree(int one, int two, int three){
 }
 
 int main(){
-    int one = 1;
-    int two = 5;
-    int three = 19;
-    cout << sumofthree(one, two, three)<< endl;
+    int one = 1, two = 5, three = 19;
+    cout << max(one, two, three)<< endl;
     return 0;
 }

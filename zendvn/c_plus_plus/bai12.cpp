@@ -1,9 +1,9 @@
 // may tinh don gian
 
 #include <iostream>
-
 using namespace std;
 
+// tinh toan
 int calculator(int a, int b, char op){
     switch(op){
         case '+': return a + b; break;
@@ -15,8 +15,7 @@ int calculator(int a, int b, char op){
 }
 
 int main(){
-    int num1 = 6;
-    int num2 = 3;
+    int num1 = 6, num2 = 3;
     char op = '/';
     cout << num1 << " " << op << " " << num2 << " = " << calculator(num1, num2, op) << endl;
     return 0;

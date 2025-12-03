@@ -2,13 +2,12 @@
 
 #include <iostream>
 #include <iomanip>
-
 using namespace std;
 
+// trung binh cong so chang o vi tri le
 void avgEvenAtOddPosition(int a[], int size){
-    int sum = 0;
-    int cnt = 0;
-
+    int sum = 0; // tinh tong so chan
+    int cnt = 0; // dem so luong so chan
     cout << "(";
 
     for(int i = 0; i < size; i++){
@@ -25,19 +24,15 @@ void avgEvenAtOddPosition(int a[], int size){
                     break;
                 }
             }
-
             if(hasNext) cout << " + ";
         }
     }
-
     cout << ") / " << cnt << " = " << fixed << setprecision(1) << (float)sum / cnt << endl;
 }
 
 int main(){
     int a[] = {2, 4, 6, 2, 8};
-    int size = sizeof(a) / sizeof(a[0]);
-
+    int size = sizeof(a) / sizeof(a[0]); // kich thuoc cua mang
     avgEvenAtOddPosition(a, size);
-
     return 0;
 }

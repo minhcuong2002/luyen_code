@@ -1,9 +1,9 @@
 // phan tu ton tai trong mang
 
 #include <iostream>
-
 using namespace std;
 
+// kiem tra phan tu trong mang
 bool find(int a[], int size, int x){
     for(int i = 0; i < size; i++){
         if(a[i] == x){
@@ -17,7 +17,7 @@ bool find(int a[], int size, int x){
 int main(){
     int a[] = {7, 8, 5, 5};
     int x = 5;
-    int size = sizeof(a) / sizeof(a[0]);
+    int size = sizeof(a) / sizeof(a[0]); // kich thuoc mang
     if(find(a, size, x)){
         cout << "Ton tai\n";
     }

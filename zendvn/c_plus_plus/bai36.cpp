@@ -6,9 +6,9 @@ using namespace std;
 int main(){
     int n = 25;
     int res = 1;
-    int i = n - 1;
+    int i = n - 1; // lay tu duoi len -> tim uoc lon nhat
     while(i > 0){
-        if(n % i == 0 && i % 2 == 1){
+        if(n % i == 0 && i % 2 == 1){ // uoc le lon nhat
             res = i;
             break;     
         }

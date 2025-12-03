@@ -1,9 +1,9 @@
 // day so chan
 
 #include <iostream>
-
 using namespace std;
 
+// kiem tra so chan
 void evenNumbers(int s, int e){
     string res;
     for(int i = s; i <= e; i++){
@@ -14,8 +14,7 @@ void evenNumbers(int s, int e){
 }
 
 int main(){
-    int start = 1;
-    int end = 10;
+    int start = 1, end = 10;
     evenNumbers(start, end);
     return 0;
 }

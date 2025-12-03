@@ -1,9 +1,9 @@
 // boi so
 
 #include <iostream>
-
 using namespace std;
 
+// boi so (de quy)
 void listMultiples(int n, int k, string &res){
     int val = n * k;
     if(val >= 100) return;
