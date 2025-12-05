@@ -18,5 +18,4 @@ int main(){
     string student[] = {"Hieu", "Dung", "Minh", "Cuong", "Lan"};
     int length = sizeof(score) / sizeof(int); // kich thuoc cua mang
     check(score, student, length);
-    return 0;
 }

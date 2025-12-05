@@ -4,10 +4,10 @@
 using namespace std;
 
 // tach chuoi bang ky tu
-void sliptStringByCharacter(string s, int l, char c){
+void sliptStringByCharacter(string s, char c){
     string result = "";
     string record = "";
-    for(int i = 0; i < l; i++){
+    for(int i = 0; i < s.length(); i++){
         if(s[i] == c){
             result += record + ", ";
             record = "";
@@ -20,8 +20,7 @@ void sliptStringByCharacter(string s, int l, char c){
 
 int main(){
     string s = "php/12/java/140/frontend/30";
-    int length = s.length();
     char character = '/';
-    sliptStringByCharacter(s, length, character);
+    sliptStringByCharacter(s, character);
     return 0;
 }

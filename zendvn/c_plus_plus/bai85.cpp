@@ -4,11 +4,11 @@
 using namespace std;
 
 // tach chuoi bang nhieu ky tu
-void sliptStringByCharacters(string s, int l, char c[], int cSize){
+void sliptStringByCharacters(string s, char c[], int cSize){
     string record = "";
     bool isSep;
 
-    for(int i = 0; i < l; i++){
+    for(int i = 0; i < s.length(); i++){
         isSep = false;
 
         // kiểm tra ký tự hiện tại có phải ký tự phân cách không
@@ -35,8 +35,7 @@ void sliptStringByCharacters(string s, int l, char c[], int cSize){
 
 int main(){
     string s = "abw=java;def=android;nfv-php";
-    int length = s.length();
     char characters[] = {'=', ';'};   // 2 ký tự phân cách
-    sliptStringByCharacters(s, length, characters, 2);
+    sliptStringByCharacters(s, characters, 2);
     return 0;
 }

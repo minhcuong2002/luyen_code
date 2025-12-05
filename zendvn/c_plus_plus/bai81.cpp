@@ -4,7 +4,7 @@
 using namespace std;
 
 // bo dau cham so dien thoai neu co
-string removeDot(string s, int length){
+string removeDot(string s){
     string newNum = "";
     for(auto x : s){
         if(isdigit(x)){
@@ -15,8 +15,8 @@ string removeDot(string s, int length){
 }
 
 // kiem tra sim than tai
-bool check(string phone, int length){
-    string phone_number = removeDot(phone, length);
+bool check(string phone){
+    string phone_number = removeDot(phone);
     int tmp = stoi(phone_number.substr(phone_number.length() - 2)); // lay 2 so cuoi cua so dien thoai
     if(tmp == 39 || tmp == 79){
         return true;
@@ -26,8 +26,7 @@ bool check(string phone, int length){
 
 int main(){
     string s = "0979.229.179";
-    int l = s.length();
-    if(check(s, l)){
+    if(check(s)){
         cout << "Yes\n";
     }
     else{

@@ -16,7 +16,7 @@ string removeSpace(string listId){
 }
 
 // dem id trong danh chuoi
-int countId(string listId, string id, int length){
+int countId(string listId, string id){
     string list = removeSpace(listId);
     stringstream ss(list); // tach chuoi thanh cac tu
     string token; // luu cac tu da tach
@@ -30,7 +30,6 @@ int countId(string listId, string id, int length){
 int main(){
     string listId = "69,     1    , 69,    69";
     string id = "69";
-    int length = listId.length();
-    cout << "ID " << id << " xuat hien " << countId(listId, id, length) << " lan\n";
+    cout << "ID " << id << " xuat hien " << countId(listId, id) << " lan\n";
     return 0;
 }

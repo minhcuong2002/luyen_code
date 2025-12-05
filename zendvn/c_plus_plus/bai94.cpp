@@ -4,8 +4,9 @@
 using namespace std;
 
 // ma hoa
-void discrypt(string str, string key, int lengthKey){
+void discryption(string str, string key){
     string result = "";
+    int lengthKey = key.length();
     int startIndex = 0; // vi tri bat dau
 
     for(int i = 0; i < lengthKey; i++){
@@ -21,7 +22,6 @@ void discrypt(string str, string key, int lengthKey){
 int main(){
     string str = "hoclaptrinh";
     string key = "335";
-    int length = key.length();
-    discrypt(str, key, length);
+    discryption(str, key);
     return 0;
 }
