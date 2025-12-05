@@ -8,12 +8,13 @@ int sumSquares(int n){
     return n * (n + 1) * (2*n + 1) / 6; // cong thuc tinh tong so luy thua 2 tu 1 den n
 }
 
-
+// xay dung form
 string buildString(int n){
     if(n == 1) return "1^2";
     return buildString(n - 1) + " + " + to_string(n) + "^2";
 }
 
+// ket qua
 void sumOfNumbers(int n){
     string form = buildString(n);
     int res = sumSquares(n);
